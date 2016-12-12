@@ -14,4 +14,3 @@ matches<-str_extract_all(has_number, ww)
 matches
 # Showing together with the original sentences:
 tibble(sentence=has_number, match=as.character(matches))
-

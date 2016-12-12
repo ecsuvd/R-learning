@@ -24,4 +24,3 @@ labs(x="Status", y="Value")
 # There were no statistically sigificant differences in relative humidity, wind direction, preciptation and visibility regarding the delays.
 # Note: Low air pressure generally means warm and moist air which brings stormy weather (cloudy, rainy, snowy) with strong winds (weatherwizkids.com). 
 # Conclusion: From the above observations stormy weather make flights more likely be delayed (=common sense knowledge).
-

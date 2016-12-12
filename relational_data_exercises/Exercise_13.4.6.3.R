@@ -15,4 +15,3 @@ ggplot(delay) +
   geom_point(aes(age, av_dep_del, color="Departure"), na.rm=TRUE) + 
   labs(x="Age of the plane", y="Delay", color="case") 
 # Conclusion: Trend of delays vs. age of planes is virtually horizantal which is interpretted as there is no (significant) dependency on the delay. 
-

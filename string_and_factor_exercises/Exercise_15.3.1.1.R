@@ -17,5 +17,3 @@ ggplot(yy, aes(rincome)) + geom_bar() + theme(text = element_text(size=5))
 count(yy, rincome)
 # About one third of the survey participants has not provided their income. 
 # In some other cases of analyses the reasons of not providing income should not be replaced as NA just as I did. 
-
-

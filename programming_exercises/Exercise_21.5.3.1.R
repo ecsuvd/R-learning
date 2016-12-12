@@ -16,5 +16,3 @@ unique_value_iris<-iris %>% map_int(function(x) length(unique(x)))
 #------------------------------
 mu=c(-10, 0, 10, 100)
 random_numbers<-mu %>% map(rnorm, n=10)
-
-

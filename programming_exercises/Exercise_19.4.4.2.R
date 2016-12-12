@@ -14,4 +14,3 @@ greeting<-function() {
   }
 }  
 greeting()  
-

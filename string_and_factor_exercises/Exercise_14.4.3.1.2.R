@@ -7,7 +7,7 @@ library("openNLP")
 library("stringr")
 
 # This function is taken from stackoverflow.com/questions/30995232/how-to-use-opennlp-to-get-pos-tags-in-r
-extractPOS<-function(x, thisPOSregex){
+extractPOS<-function(x, thisPOSregex) {
    x<-as.String(x)
    wordAnnotation<-annotate(x, list(Maxent_Sent_Token_Annotator(), Maxent_Word_Token_Annotator()))
    POSAnnotation<-annotate(x, Maxent_POS_Tag_Annotator(),wordAnnotation)
@@ -26,7 +26,7 @@ lapply(txt, extractPOS, "NN")
 a<-lapply(sentences, extractPOS, "NNS")
 b<-str_replace_all(a, "\\/NNS", "")
 indexes <- which(b == "") # removing empty elements. 
-if(length(indexes) > 0){
+if(length(indexes) > 0) {
   b <- b[-indexes]
 }  
 # Comment: openNLP is slow on large texts and it does not guarantee to extract all nouns.   

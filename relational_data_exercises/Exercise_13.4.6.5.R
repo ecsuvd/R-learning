@@ -33,4 +33,3 @@ grid.arrange(p3, p4, nrow=2)
 
 # Comment: It seems to be that the Jun 13, 2013 was one of the bad days in terms of delays and cancellations, but not the worst of the year. 
 # Weather report on Google shows that there was a thunderstorm in NYC.
-
