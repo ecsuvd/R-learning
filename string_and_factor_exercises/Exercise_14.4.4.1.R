@@ -5,12 +5,12 @@ library("tidyverse")
 library("stringr")
 
 # To pull numbers (1 to 10) and its following words:
-nn<-c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")
-number<-str_c(nn, collapse="|\\b")
-ww<-str_c("(\\b",number,") ([^ ]+)") # regex for a word follows a number.
-has_number<-str_subset(str_to_lower(sentences), ww)
-str_view_all(has_number, ww) # viewing words found. 
-matches<-str_extract_all(has_number, ww)
+number_words <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")
+number <- str_c(number_words, collapse = "|\\b")
+word_after_number <- str_c("(\\b",number,") ([^ ]+)") # regex for a word follows a number.
+has_number <- str_subset(str_to_lower(sentences), word_after_number)
+str_view_all(has_number, word_after_number) # viewing words found. 
+matches <- str_extract_all(has_number, word_after_number)
 matches
 # Showing together with the original sentences:
-tibble(sentence=has_number, match=as.character(matches))
+tibble(sentence = has_number, match = as.character(matches))
